@@ -1,8 +1,6 @@
 ApiDemo::Application.routes.draw do
   resources :users
 
-  match '/*path' => 'application#cors_preflight_check', :via => :options
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
